@@ -1,0 +1,290 @@
+soong_namespace {
+}
+
+cc_prebuilt_library_shared {
+    name: "libantradio",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: ["system/lib64/libantradio.so"],
+        },
+        android_arm64: {
+            srcs: ["system/lib64/libantradio.so"],
+        },
+    },
+    compile_multilib: "both",
+    check_elf_files: false,
+    prefer: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "prebuilt_vendor.qti.hardware.capabilityconfigstore@1.0",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: ["vendor/lib64/vendor.qti.hardware.capabilityconfigstore@1.0.so"],
+        },
+        android_arm64: {
+            srcs: ["vendor/lib64/vendor.qti.hardware.capabilityconfigstore@1.0.so"],
+        },
+    },
+    compile_multilib: "both",
+    check_elf_files: false,
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libsdm-disp-apis.qti",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: ["system/product/lib64/libsdm-disp-apis.qti.so"],
+        },
+        android_arm64: {
+            srcs: ["system/product/lib64/libsdm-disp-apis.qti.so"],
+        },
+    },
+    compile_multilib: "both",
+    check_elf_files: false,
+    prefer: true,
+    product_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libsdm-disp-vndapis",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: ["vendor/lib64/libsdm-disp-vndapis.so"],
+        },
+        android_arm64: {
+            srcs: ["vendor/lib64/libsdm-disp-vndapis.so"],
+        },
+    },
+    compile_multilib: "both",
+    check_elf_files: false,
+    prefer: true,
+    soc_specific: true,
+}
+
+android_app_import {
+    name: "PowerOffAlarm",
+    owner: "oneplus",
+    apk: "vendor/app/PowerOffAlarm/PowerOffAlarm.apk",
+    certificate: "platform",
+    dex_preopt: {
+        enabled: false,
+    },
+    soc_specific: true,
+}
+
+android_app_import {
+    name: "CneApp",
+    owner: "oneplus",
+    apk: "vendor/app/CneApp/CneApp.apk",
+    certificate: "platform",
+    dex_preopt: {
+        enabled: false,
+    },
+    soc_specific: true,
+}
+
+android_app_import {
+    name: "dpmserviceapp",
+    owner: "oneplus",
+    apk: "system/product/priv-app/dpmserviceapp/dpmserviceapp.apk",
+    certificate: "platform",
+    dex_preopt: {
+        enabled: false,
+    },
+    privileged: true,
+    product_specific: true,
+}
+
+android_app_import {
+    name: "HotwordEnrollmentOKGoogleWCD9340",
+    owner: "oneplus",
+    apk: "system/product/priv-app/HotwordEnrollmentOKGoogleWCD9340/HotwordEnrollmentOKGoogleWCD9340.apk",
+    certificate: "platform",
+    dex_preopt: {
+        enabled: false,
+    },
+    privileged: true,
+    product_specific: true,
+}
+
+android_app_import {
+    name: "HotwordEnrollmentXGoogleWCD9340",
+    owner: "oneplus",
+    apk: "system/product/priv-app/HotwordEnrollmentXGoogleWCD9340/HotwordEnrollmentXGoogleWCD9340.apk",
+    certificate: "platform",
+    dex_preopt: {
+        enabled: false,
+    },
+    privileged: true,
+    product_specific: true,
+}
+
+android_app_import {
+    name: "NxpNfcNci",
+    owner: "oneplus",
+    apk: "system/app/NxpNfcNci/NxpNfcNci.apk",
+    certificate: "platform",
+    dex_preopt: {
+        enabled: false,
+    },
+}
+
+android_app_import {
+    name: "NxpSecureElement",
+    owner: "oneplus",
+    apk: "system/app/NxpSecureElement/NxpSecureElement.apk",
+    certificate: "platform",
+    dex_preopt: {
+        enabled: false,
+    },
+}
+
+android_app_import {
+    name: "pasrservice",
+    owner: "oneplus",
+    apk: "vendor/app/pasrservice/pasrservice.apk",
+    certificate: "platform",
+    dex_preopt: {
+        enabled: false,
+    },
+    soc_specific: true,
+}
+
+android_app_import {
+    name: "QtiTelephonyService",
+    owner: "oneplus",
+    apk: "system/product/app/QtiTelephonyService/QtiTelephonyService.apk",
+    certificate: "platform",
+    dex_preopt: {
+        enabled: false,
+    },
+    product_specific: true,
+}
+
+android_app_import {
+    name: "IWlanService",
+    owner: "oneplus",
+    apk: "vendor/app/IWlanService/IWlanService.apk",
+    certificate: "platform",
+    dex_preopt: {
+        enabled: false,
+    },
+    soc_specific: true,
+}
+
+android_app_import {
+    name: "qcrilmsgtunnel",
+    owner: "oneplus",
+    apk: "system/product/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk",
+    certificate: "platform",
+    dex_preopt: {
+        enabled: false,
+    },
+    privileged: true,
+    product_specific: true,
+}
+
+android_app_import {
+    name: "ims",
+    owner: "oneplus",
+    apk: "system/system_ext/priv-app/ims/ims.apk",
+    certificate: "platform",
+    dex_preopt: {
+        enabled: false,
+    },
+    privileged: true,
+    system_ext_specific: true,
+}
+
+android_app_import {
+    name: "uceShimService",
+    owner: "oneplus",
+    apk: "system/product/app/uceShimService/uceShimService.apk",
+    certificate: "platform",
+    dex_preopt: {
+        enabled: false,
+    },
+    product_specific: true,
+}
+
+android_app_import {
+    name: "SoterService",
+    owner: "oneplus",
+    apk: "system/app/SoterService/SoterService.apk",
+    certificate: "platform",
+    dex_preopt: {
+        enabled: false,
+    },
+}
+
+android_app_import {
+    name: "TimeService",
+    owner: "oneplus",
+    apk: "vendor/app/TimeService/TimeService.apk",
+    certificate: "platform",
+    dex_preopt: {
+        enabled: false,
+    },
+    soc_specific: true,
+}
+
+android_app_import {
+    name: "WfdService",
+    owner: "oneplus",
+    apk: "system/priv-app/WfdService/WfdService.apk",
+    certificate: "platform",
+    dex_preopt: {
+        enabled: false,
+    },
+    privileged: true,
+}
+
+dex_import {
+    name: "vendor.qti.hardware.capabilityconfigstore-V1.0-java",
+    owner: "oneplus",
+    jars: ["system/system_ext/framework/vendor.qti.hardware.capabilityconfigstore-V1.0-java.jar"],
+    system_ext_specific: true,
+}
+
+dex_import {
+    name: "WfdCommon",
+    owner: "oneplus",
+    jars: ["system/framework/WfdCommon.jar"],
+}
+
+prebuilt_etc_xml {
+    name: "android.hardware.gnss@2.0-service-qti",
+    owner: "oneplus",
+    src: "vendor/etc/vintf/manifest/android.hardware.gnss@2.0-service-qti.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    soc_specific: true,
+}
+
+prebuilt_etc_xml {
+    name: "vendor.qti.gnss@3.0-service",
+    owner: "oneplus",
+    src: "vendor/etc/vintf/manifest/vendor.qti.gnss@3.0-service.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    soc_specific: true,
+}
