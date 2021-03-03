@@ -376,7 +376,7 @@ PRODUCT_COPY_FILES += \
 	vendor/oneplus/sm8150-common/vendor/lib64/libcvp_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcvp_stub.so \
 	vendor/oneplus/sm8150-common/vendor/lib64/vendor.qti.hardware.cvp@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.cvp@1.0.so \
 	vendor/oneplus/sm8150-common/vendor/lib64/vendor.qti.hardware.cvp@1.0-halimpl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.cvp@1.0-halimpl.so \
-	vendor/oneplus/sm8150-common/system/bin/dashd:$(TARGET_COPY_OUT_SYSTEM)/bin/dashd \
+	vendor/oneplus/sm8150-common/vendor/bin/dashd:$(TARGET_COPY_OUT_VENDOR)/bin/dashd \
 	vendor/oneplus/sm8150-common/vendor/bin/qdcmss:$(TARGET_COPY_OUT_VENDOR)/bin/qdcmss \
 	vendor/oneplus/sm8150-common/vendor/etc/hdr_config.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/hdr_config.cfg \
 	vendor/oneplus/sm8150-common/vendor/etc/init/qdcmss.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qdcmss.rc \
