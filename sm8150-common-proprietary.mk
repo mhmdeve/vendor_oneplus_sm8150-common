@@ -1286,7 +1286,6 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
 	libantradio \
-	vendor.qti.hardware.capabilityconfigstore@1.0 \
 	libsdm-disp-apis.qti \
 	libsdm-disp-vndapis \
 	PowerOffAlarm \
