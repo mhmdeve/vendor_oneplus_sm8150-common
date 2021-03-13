@@ -48,7 +48,6 @@ PRODUCT_COPY_FILES += \
 	vendor/oneplus/sm8150-common/vendor/lib/libaudioparsers.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudioparsers.so \
 	vendor/oneplus/sm8150-common/vendor/lib/libbluetooth_audio_session_qti.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbluetooth_audio_session_qti.so \
 	vendor/oneplus/sm8150-common/vendor/lib/libdrc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdrc.so \
-	vendor/oneplus/sm8150-common/vendor/lib/libqtigef.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqtigef.so \
 	vendor/oneplus/sm8150-common/vendor/lib/libsurround_3mic_proc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsurround_3mic_proc.so \
 	vendor/oneplus/sm8150-common/vendor/lib/soundfx/libasphere.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libasphere.so \
 	vendor/oneplus/sm8150-common/vendor/lib/soundfx/libhaptic_effect.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libhaptic_effect.so \
@@ -68,7 +67,6 @@ PRODUCT_COPY_FILES += \
 	vendor/oneplus/sm8150-common/vendor/lib64/libaudioalsa.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudioalsa.so \
 	vendor/oneplus/sm8150-common/vendor/lib64/libaudioparsers.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudioparsers.so \
 	vendor/oneplus/sm8150-common/vendor/lib64/libbluetooth_audio_session_qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbluetooth_audio_session_qti.so \
-	vendor/oneplus/sm8150-common/vendor/lib64/libqtigef.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqtigef.so \
 	vendor/oneplus/sm8150-common/vendor/lib64/soundfx/libasphere.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libasphere.so \
 	vendor/oneplus/sm8150-common/vendor/lib64/soundfx/libhaptic_effect.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libhaptic_effect.so \
 	vendor/oneplus/sm8150-common/vendor/lib64/soundfx/libqcreverb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libqcreverb.so \
@@ -432,20 +430,43 @@ PRODUCT_COPY_FILES += \
 	vendor/oneplus/sm8150-common/vendor/lib64/vendor.display.color@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.color@1.1.so \
 	vendor/oneplus/sm8150-common/vendor/lib64/vendor.display.color@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.color@1.2.so \
 	vendor/oneplus/sm8150-common/vendor/lib64/vendor.display.postproc@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.postproc@1.0.so \
-	vendor/oneplus/sm8150-common/system/etc/permissions/privapp-permissions-dolby.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-dolby.xml \
-	vendor/oneplus/sm8150-common/vendor/bin/hw/vendor.dolby.hardware.dms@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.dolby.hardware.dms@1.0-service \
-	vendor/oneplus/sm8150-common/vendor/etc/dolby/dap-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dap-default.xml \
-	vendor/oneplus/sm8150-common/vendor/etc/init/vendor.dolby.hardware.dms@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.dolby.hardware.dms@1.0-service.rc \
-	vendor/oneplus/sm8150-common/vendor/lib/libdapparamstorage.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdapparamstorage.so \
-	vendor/oneplus/sm8150-common/vendor/lib/libstagefrightdolby.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefrightdolby.so \
-	vendor/oneplus/sm8150-common/vendor/lib/soundfx/libatmos.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libatmos.so \
-	vendor/oneplus/sm8150-common/vendor/lib/vendor.dolby.hardware.dms@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.dolby.hardware.dms@1.0.so \
+	vendor/oneplus/sm8150-common/system/etc/permissions/com.oneplus.software.oos.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.oneplus.software.oos.xml \
+	vendor/oneplus/sm8150-common/system/etc/permissions/oneplus.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/oneplus.xml \
+	vendor/oneplus/sm8150-common/system/etc/permissions/privapp-com.oneplus.sound.tuner.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-com.oneplus.sound.tuner.xml \
+	vendor/oneplus/sm8150-common/system/etc/permissions/privapp-com.dolby.daxservice.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-com.dolby.daxservice.xml \
+	vendor/oneplus/sm8150-common/system/etc/sysconfig/config-com.dolby.daxservice.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/config-com.dolby.daxservice.xml \
+	vendor/oneplus/sm8150-common/system/etc/sysconfig/config-com.oneplus.config.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/config-com.oneplus.config.xml \
+	vendor/oneplus/sm8150-common/system/etc/sysconfig/config-com.oneplus.sound.tuner.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/config-com.oneplus.sound.tuner.xml \
+	vendor/oneplus/sm8150-common/system/framework/oneplus.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/oneplus.jar \
+	vendor/oneplus/sm8150-common/system/lib64/vendor.dolby.hardware.dms@2.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.dolby.hardware.dms@2.0.so \
+	vendor/oneplus/sm8150-common/vendor/bin/hw/vendor.dolby.hardware.dms@2.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.dolby.hardware.dms@2.0-service \
+	vendor/oneplus/sm8150-common/vendor/etc/dolby/dax-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-default.xml \
+	vendor/oneplus/sm8150-common/vendor/etc/init/vendor.dolby.hardware.dms@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.dolby.hardware.dms@2.0-service.rc \
+	vendor/oneplus/sm8150-common/vendor/etc/media_codecs_dolby_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_dolby_audio.xml \
 	vendor/oneplus/sm8150-common/vendor/lib64/libdapparamstorage.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdapparamstorage.so \
+	vendor/oneplus/sm8150-common/vendor/lib64/libdeccfg.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdeccfg.so \
 	vendor/oneplus/sm8150-common/vendor/lib64/libdlbdsservice.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdlbdsservice.so \
+	vendor/oneplus/sm8150-common/vendor/lib64/libqtigef.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqtigef.so \
+	vendor/oneplus/sm8150-common/vendor/lib64/libstagefright_soft_ac4dec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libstagefright_soft_ac4dec.so \
+	vendor/oneplus/sm8150-common/vendor/lib64/libstagefright_soft_ddpdec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libstagefright_soft_ddpdec.so \
 	vendor/oneplus/sm8150-common/vendor/lib64/libstagefrightdolby.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libstagefrightdolby.so \
-	vendor/oneplus/sm8150-common/vendor/lib64/soundfx/libatmos.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libatmos.so \
-	vendor/oneplus/sm8150-common/vendor/lib64/vendor.dolby.hardware.dms@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.dolby.hardware.dms@1.0-impl.so \
-	vendor/oneplus/sm8150-common/vendor/lib64/vendor.dolby.hardware.dms@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.dolby.hardware.dms@1.0.so \
+	vendor/oneplus/sm8150-common/vendor/lib64/soundfx/libeffectproxy.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libeffectproxy.so \
+	vendor/oneplus/sm8150-common/vendor/lib64/soundfx/libhwdap.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libhwdap.so \
+	vendor/oneplus/sm8150-common/vendor/lib64/soundfx/libswdap.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libswdap.so \
+	vendor/oneplus/sm8150-common/vendor/lib64/soundfx/libswvqe.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libswvqe.so \
+	vendor/oneplus/sm8150-common/vendor/lib64/vendor.dolby.hardware.dms@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.dolby.hardware.dms@2.0-impl.so \
+	vendor/oneplus/sm8150-common/vendor/lib64/vendor.dolby.hardware.dms@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.dolby.hardware.dms@2.0.so \
+	vendor/oneplus/sm8150-common/vendor/lib/libdapparamstorage.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdapparamstorage.so \
+	vendor/oneplus/sm8150-common/vendor/lib/libdeccfg.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdeccfg.so \
+	vendor/oneplus/sm8150-common/vendor/lib/libqtigef.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqtigef.so \
+	vendor/oneplus/sm8150-common/vendor/lib/libstagefright_soft_ac4dec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_soft_ac4dec.so \
+	vendor/oneplus/sm8150-common/vendor/lib/libstagefright_soft_ddpdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_soft_ddpdec.so \
+	vendor/oneplus/sm8150-common/vendor/lib/libstagefrightdolby.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefrightdolby.so \
+	vendor/oneplus/sm8150-common/vendor/lib/soundfx/libeffectproxy.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libeffectproxy.so \
+	vendor/oneplus/sm8150-common/vendor/lib/soundfx/libhwdap.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libhwdap.so \
+	vendor/oneplus/sm8150-common/vendor/lib/soundfx/libswdap.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libswdap.so \
+	vendor/oneplus/sm8150-common/vendor/lib/soundfx/libswvqe.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libswvqe.so \
+	vendor/oneplus/sm8150-common/vendor/lib/vendor.dolby.hardware.dms@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.dolby.hardware.dms@2.0.so \
 	vendor/oneplus/sm8150-common/system/product/bin/dpmd:$(TARGET_COPY_OUT_PRODUCT)/bin/dpmd \
 	vendor/oneplus/sm8150-common/system/product/etc/dpm/dpm.conf:$(TARGET_COPY_OUT_PRODUCT)/etc/dpm/dpm.conf \
 	vendor/oneplus/sm8150-common/system/product/etc/init/dpmd.rc:$(TARGET_COPY_OUT_PRODUCT)/etc/init/dpmd.rc \
@@ -769,7 +790,6 @@ PRODUCT_COPY_FILES += \
 	vendor/oneplus/sm8150-common/vendor/lib/libOmxQcelp13Dec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxQcelp13Dec.so \
 	vendor/oneplus/sm8150-common/vendor/lib/libOmxVideoDSMode.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxVideoDSMode.so \
 	vendor/oneplus/sm8150-common/vendor/lib/libqcbor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqcbor.so \
-	vendor/oneplus/sm8150-common/vendor/lib/libstagefright_soft_ddpdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_soft_ddpdec.so \
 	vendor/oneplus/sm8150-common/vendor/lib/libvpphcp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvpphcp.so \
 	vendor/oneplus/sm8150-common/vendor/lib/libvpphvx.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvpphvx.so \
 	vendor/oneplus/sm8150-common/vendor/lib/vendor.qti.hardware.vpp@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.vpp@1.1.so \
@@ -1290,7 +1310,9 @@ PRODUCT_PACKAGES += \
 	libsdm-disp-vndapis \
 	PowerOffAlarm \
 	CneApp \
-	DolbyAtmos \
+	OPOnlineConfig \
+	daxService \
+	OPSoundTuner \
 	dpmserviceapp \
 	HotwordEnrollmentOKGoogleWCD9340 \
 	HotwordEnrollmentXGoogleWCD9340 \

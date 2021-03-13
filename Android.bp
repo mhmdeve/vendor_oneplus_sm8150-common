@@ -83,9 +83,30 @@ android_app_import {
 }
 
 android_app_import {
-    name: "DolbyAtmos",
+    name: "OPOnlineConfig",
     owner: "oneplus",
-    apk: "system/priv-app/DolbyAtmos/DolbyAtmos.apk",
+    apk: "system/app/OPOnlineConfig/OPOnlineConfig.apk",
+    certificate: "platform",
+    dex_preopt: {
+        enabled: false,
+    },
+}
+
+android_app_import {
+    name: "daxService",
+    owner: "oneplus",
+    apk: "system/priv-app/daxService/daxService.apk",
+    certificate: "platform",
+    dex_preopt: {
+        enabled: false,
+    },
+    privileged: true,
+}
+
+android_app_import {
+    name: "OPSoundTuner",
+    owner: "oneplus",
+    apk: "system/priv-app/OPSoundTuner/OPSoundTuner.apk",
     certificate: "platform",
     dex_preopt: {
         enabled: false,
