@@ -150,6 +150,7 @@ android_app_import {
 	owner: "oneplus",
 	apk: "proprietary/system_ext/app/NxpNfcNci/NxpNfcNci.apk",
 	certificate: "platform",
+	overrides: ["NfcNci"],
 	dex_preopt: {
 		enabled: false,
 	},
