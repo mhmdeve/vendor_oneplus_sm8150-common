@@ -54,7 +54,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8150-common/proprietary/system_ext/lib/libwfduibcsinkinterface.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libwfduibcsinkinterface.so \
     vendor/oneplus/sm8150-common/proprietary/system_ext/lib/libwfduibcsrc.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libwfduibcsrc.so \
     vendor/oneplus/sm8150-common/proprietary/system_ext/lib/libwfduibcsrcinterface.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libwfduibcsrcinterface.so \
-    vendor/oneplus/sm8150-common/proprietary/system_ext/lib/vendor.oneplus.hardware.display@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.oneplus.hardware.display@1.0.so \
     vendor/oneplus/sm8150-common/proprietary/system_ext/lib/vendor.qti.hardware.wifidisplaysession@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.wifidisplaysession@1.0.so \
     vendor/oneplus/sm8150-common/proprietary/system_ext/lib64/com.qualcomm.qti.dpm.api@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/com.qualcomm.qti.dpm.api@1.0.so \
     vendor/oneplus/sm8150-common/proprietary/system_ext/lib64/lib-imsvideocodec.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/lib-imsvideocodec.so \
@@ -93,7 +92,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8150-common/proprietary/system_ext/lib64/vendor.oneplus.hardware.CameraMDMHIDL@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.oneplus.hardware.CameraMDMHIDL@1.0.so \
     vendor/oneplus/sm8150-common/proprietary/system_ext/lib64/vendor.oneplus.hardware.camera@1.0-adapter-helper.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.oneplus.hardware.camera@1.0-adapter-helper.so \
     vendor/oneplus/sm8150-common/proprietary/system_ext/lib64/vendor.oneplus.hardware.camera@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.oneplus.hardware.camera@1.0.so \
-    vendor/oneplus/sm8150-common/proprietary/system_ext/lib64/vendor.oneplus.hardware.display@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.oneplus.hardware.display@1.0.so \
     vendor/oneplus/sm8150-common/proprietary/system_ext/lib64/vendor.qti.diaghal@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.diaghal@1.0.so \
     vendor/oneplus/sm8150-common/proprietary/system_ext/lib64/vendor.qti.imsrtpservice@3.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.imsrtpservice@3.0.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/bin/ATFWD-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/ATFWD-daemon \
@@ -857,7 +855,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib64/vendor.nxp.eventprocessor@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.nxp.eventprocessor@1.0.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib64/vendor.nxp.nxpnfc@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.nxp.nxpnfc@1.0.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib64/vendor.oneplus.hardware.CameraMDMHIDL@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oneplus.hardware.CameraMDMHIDL@1.0.so \
-    vendor/oneplus/sm8150-common/proprietary/vendor/lib64/vendor.oneplus.hardware.display@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oneplus.hardware.display@1.0.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib64/vendor.oneplus.hardware.hdcpkey@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oneplus.hardware.hdcpkey@1.0.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib64/vendor.oneplus.hardware.ifaa@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oneplus.hardware.ifaa@2.0.so \
     vendor/oneplus/sm8150-common/proprietary/vendor/lib64/vendor.oneplus.hardware.param@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oneplus.hardware.param@1.0.so \
