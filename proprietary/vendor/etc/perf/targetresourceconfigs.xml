@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <!--
- * Copyright (c) 2017 Qualcomm Technologies, Inc.
+ * Copyright (c) 2017-2019 Qualcomm Technologies, Inc.
  * All Rights Reserved.
  * Confidential and Proprietary - Qualcomm Technologies, Inc.
 -->
@@ -25,6 +25,7 @@ as anyway perflock calls of these resources would fail. -->
     <PerfResources>
 
         <Config MajorValue="0x1" MinorValue="0x1" Supported="no" /> <!--  toggle_l2_pc_perf -->
+        <Config MajorValue="0x1" MinorValue="0x2" Node="/proc/sys/kernel/sched_busy_hyst_ns" />
 
         <Config MajorValue="0x3" MinorValue="0x3" Supported="no" /> <!-- sched_small_task -->
         <Config MajorValue="0x3" MinorValue="0x6" Supported="no" /> <!-- sched_init_task_load -->
@@ -34,8 +35,6 @@ as anyway perflock calls of these resources would fail. -->
         <Config MajorValue="0x3" MinorValue="0x13" Supported="no" /> <!-- sched_set_freq_aggr -->
         <Config MajorValue="0x3" MinorValue="0x14" Supported="no" /> <!-- sched_enable_thread_grouping -->
         <Config MajorValue="0x3" MinorValue="0x17" Supported="no" /> <!-- sched_freq_aggr_threshold -->
-
-        <Config MajorValue="0x5" MinorValue="0x13" Supported="no" /> <!-- rtg_boost_freq -->
 
         <Config MajorValue="0x6" MinorValue="0x4" Supported="no" /> <!-- cpubw_hmon_low_power_ceil_mbps -->
         <Config MajorValue="0x6" MinorValue="0x5" Supported="no" /> <!-- cpubw_hmon_low_power_io_percent -->
@@ -57,7 +56,7 @@ as anyway perflock calls of these resources would fail. -->
         <Config MajorValue="0x6" MinorValue="0x8" Node="/sys/class/devfreq/soc:qcom,cpu-cpu-llcc-bw/bw_hwmon/sample_ms" />
         <Config MajorValue="0x6" MinorValue="0x9" Node="/sys/class/devfreq/soc:qcom,cpu-cpu-llcc-bw/bw_hwmon/idle_mbps" />
 
-        <Config MajorValue="0xB" MinorValue="0x6" Supported="no" /><!-- disable_ppr -->
+        <Config MajorValue="0xB" MinorValue="0x2" Node="/sys/devices/system/cpu/cpu_boost/input_boost_freq"/>
 
         <!-- llcbw L3 and DDR major end -->
         <Config MajorValue="0xC" MinorValue="0x0" Node="/sys/class/devfreq/soc:qcom,cpu-llcc-ddr-bw/min_freq" />
@@ -75,11 +74,11 @@ as anyway perflock calls of these resources would fail. -->
         <Config MajorValue="0xC" MinorValue="0xD" Supported="no" />
         <Config MajorValue="0xC" MinorValue="0xE" Supported="no" />
 
-        <Config MajorValue="0xD" MinorValue="0x0" Node="/sys/class/devfreq/soc:qcom,cpu%d-cpu-l3-lat/min_freq" />
-        <Config MajorValue="0xD" MinorValue="0x1" Node="/sys/class/devfreq/soc:qcom,cpu0-cpu-l3-lat/mem_latency/ratio_ceil" />
-        <Config MajorValue="0xD" MinorValue="0x2" Node="/sys/class/devfreq/soc:qcom,cpu4-cpu-l3-lat/mem_latency/ratio_ceil" />
-        <Config MajorValue="0xD" MinorValue="0x3" Node="/sys/class/devfreq/soc:qcom,cpu0-cpu-l3-lat/mem_latency/stall_floor" />
-        <Config MajorValue="0xD" MinorValue="0x4" Node="/sys/class/devfreq/soc:qcom,cpu4-cpu-l3-lat/mem_latency/stall_floor" />
+        <Config MajorValue="0xD" MinorValue="0x0" Node="/sys/class/devfreq/18590000.qcom,devfreq-l3:qcom,cpu%d-cpu-l3-lat/min_freq" />
+        <Config MajorValue="0xD" MinorValue="0x1" Node="/sys/class/devfreq/18590000.qcom,devfreq-l3:qcom,cpu0-cpu-l3-lat/mem_latency/ratio_ceil" />
+        <Config MajorValue="0xD" MinorValue="0x2" Node="/sys/class/devfreq/18590000.qcom,devfreq-l3:qcom,cpu4-cpu-l3-lat/mem_latency/ratio_ceil" />
+        <Config MajorValue="0xD" MinorValue="0x3" Node="/sys/class/devfreq/18590000.qcom,devfreq-l3:qcom,cpu0-cpu-l3-lat/mem_latency/stall_floor" />
+        <Config MajorValue="0xD" MinorValue="0x4" Node="/sys/class/devfreq/18590000.qcom,devfreq-l3:qcom,cpu4-cpu-l3-lat/mem_latency/stall_floor" />
 
     </PerfResources>
 </ResourceConfigs>
